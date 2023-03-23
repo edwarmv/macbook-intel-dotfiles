@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Edwar Martinez Vale
+email = edwar_kenedy@hotmail.com
+[init]
+	defaultBranch = main
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://bitbucket.ekupd.com"]
+	provider = bitbucket
+[include]
+	path = ~/.config/gitalias/gitalias.txt
