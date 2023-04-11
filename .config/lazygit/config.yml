@@ -6,5 +6,5 @@ gui:
     selectedLineBgColor:
       - underline
     selectedRangeBgColor:
-      - inverted
+      - reverse
 
