@@ -1,1 +1,0 @@
-/Users/edwarmv/.asdf/completions/asdf.fish
