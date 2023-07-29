@@ -13,3 +13,6 @@
 [submodule "/Users/edwarmv/.config/bat"]
 	path = /Users/edwarmv/.config/bat
 	url = https://github.com/edwarmv/bat.git
+[submodule "/Users/edwarmv/.config/fish"]
+	path = /Users/edwarmv/.config/fish
+	url = https://github.com/edwarmv/fish.git
