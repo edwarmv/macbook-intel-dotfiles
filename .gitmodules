@@ -10,3 +10,6 @@
 [submodule "/Users/edwarmv/.config/lazygit"]
 	path = /Users/edwarmv/.config/lazygit
 	url = https://github.com/edwarmv/lazygit.git
+[submodule "/Users/edwarmv/.config/bat"]
+	path = /Users/edwarmv/.config/bat
+	url = https://github.com/edwarmv/bat.git
