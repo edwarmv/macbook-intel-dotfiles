@@ -16,3 +16,6 @@
 [submodule "/Users/edwarmv/.config/fish"]
 	path = /Users/edwarmv/.config/fish
 	url = https://github.com/edwarmv/fish.git
+[submodule "/Users/edwarmv/.config/delta"]
+	path = /Users/edwarmv/.config/delta
+	url = https://github.com/edwarmv/delta.git
