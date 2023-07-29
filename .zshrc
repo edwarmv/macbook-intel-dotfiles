@@ -28,6 +28,9 @@ export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 export EDITOR="nvim"
 export XDG_CONFIG_HOME=$HOME/.config
 export ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
+# gruvbox-material
+ZVM_VI_HIGHLIGHT_FOREGROUND=#d4be98
+ZVM_VI_HIGHLIGHT_BACKGROUND=#504945
 # export FZF_DEFAULT_OPTS="
 # --bind=alt-j:preview-down,alt-k:preview-up,alt-d:preview-page-down,alt-u:preview-page-up,change:first,alt-a:select-all,alt-A:deselect-all,alt-p:toggle-preview
 # --preview-window noborder
