@@ -7,3 +7,6 @@
 [submodule "/Users/edwarmv/.config/kitty"]
 	path = /Users/edwarmv/.config/kitty
 	url = https://github.com/edwarmv/kitty.git
+[submodule "/Users/edwarmv/.config/lazygit"]
+	path = /Users/edwarmv/.config/lazygit
+	url = https://github.com/edwarmv/lazygit.git
