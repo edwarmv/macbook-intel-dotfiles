@@ -5,22 +5,17 @@ name = Edwar Martinez Vale
 email = edwar_kenedy@hotmail.com
 [init]
 	defaultBranch = main
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [credential "https://bitbucket.ekupd.com"]
 	provider = bitbucket
 [include]
 	path = ~/.config/gitalias/gitalias.txt
-	path = ~/.config/delta/themes.gitconfig
+	path = ~/.config/delta/tokyonight_storm.gitconfig
 [core]
 	excludesfile = /Users/edwarmv/.gitignore
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
 [delta]
-	features = gruvbox-material
 	navigate = true    # use n and N to move between diff sections
 	light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
 	dark = true
@@ -28,3 +23,7 @@ email = edwar_kenedy@hotmail.com
 	conflictstyle = diff3
 [diff]
 	colorMoved = default
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
