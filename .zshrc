@@ -17,55 +17,17 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-alias vi="nvim"
+# thanks https://medium.com/codex/how-and-why-you-should-split-your-bashrc-or-zshrc-files-285e5cc3c843
 
-export PATH=":$HOME/.local/bin:$PATH"
-export PATH=":$HOME/.pub-cache/bin:$PATH"
-export TERMINFO_DIRS=":$HOME/.local/share/terminfo"
-export EXA_COLORS="reset"
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
-export EDITOR="nvim"
-export XDG_CONFIG_HOME=$HOME/.config
-export ZSH_TMUX_CONFIG=$HOME/.config/tmux/tmux.conf
-# gruvbox-material
-ZVM_VI_HIGHLIGHT_FOREGROUND=#d4be98
-ZVM_VI_HIGHLIGHT_BACKGROUND=#504945
-# export FZF_DEFAULT_OPTS="
-# --bind=alt-j:preview-down,alt-k:preview-up,alt-d:preview-page-down,alt-u:preview-page-up,change:first,alt-a:select-all,alt-A:deselect-all,alt-p:toggle-preview
-# --preview-window noborder
-# --layout=reverse
-# --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796
-# --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6
-# --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796
-# --color=separator:#8aadf4
-# --color=border:#8aadf4
-# "
-export FZF_DEFAULT_OPTS="
---bind=alt-j:preview-down,alt-k:preview-up,alt-d:preview-page-down,alt-u:preview-page-up,change:first,alt-a:select-all,alt-A:deselect-all,alt-p:toggle-preview
---preview-window noborder
---layout=reverse
---color=fg:#928374,bg:-1,hl:#7daea3
---color=fg+:#928374,bg+:#3c3836,hl+:#7daea3
---color=info:#d8a657,prompt:#d3869b,pointer:#d3869b
---color=marker:#a9b665,spinner:#d3869b,header:#a9b665,preview-bg:-1
---color=border:#928374
---color=separator:#665c54
-"
-lfcd () {
-    tmp="$(mktemp)"
-    # `command` is needed in case `lfcd` is aliased to `lf`
-    command lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        if [ -d "$dir" ]; then
-            if [ "$dir" != "$(pwd)" ]; then
-                cd "$dir"
-            fi
-        fi
-    fi
-}
+source ~/.config/zshrc/init.sh
+
+FILES_STR=$(fd --glob '*.sh' --exclude 'init.sh' ~/.config/zshrc)
+
+FILES=($(echo $FILES_STR | tr '\n' ' '))
+
+for FILE in $FILES; do
+    source $FILE
+done
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -137,7 +99,7 @@ plugins=(git
   zsh-syntax-highlighting
   gh)
 
-  source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
