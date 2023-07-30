@@ -22,3 +22,6 @@
 [submodule "/Users/edwarmv/.config/zshrc"]
 	path = /Users/edwarmv/.config/zshrc
 	url = https://github.com/edwarmv/zshrc.git
+[submodule "/Users/edwarmv/.config/btop"]
+	path = /Users/edwarmv/.config/btop
+	url = https://github.com/edwarmv/btop.git
