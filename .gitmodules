@@ -19,3 +19,6 @@
 [submodule "/Users/edwarmv/.config/delta"]
 	path = /Users/edwarmv/.config/delta
 	url = https://github.com/edwarmv/delta.git
+[submodule "/Users/edwarmv/.config/zshrc"]
+	path = /Users/edwarmv/.config/zshrc
+	url = https://github.com/edwarmv/zshrc.git
