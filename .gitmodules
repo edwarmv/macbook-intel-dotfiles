@@ -25,3 +25,6 @@
 [submodule "/Users/edwarmv/.config/btop"]
 	path = .config/btop
 	url = https://github.com/edwarmv/btop.git
+[submodule ".config/lazygit"]
+	path = .config/lazygit
+	url = https://github.com/edwarmv/lazygit.git
