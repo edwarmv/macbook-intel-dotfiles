@@ -28,3 +28,6 @@
 [submodule ".config/lazygit"]
 	path = .config/lazygit
 	url = https://github.com/edwarmv/lazygit.git
+[submodule ".config/starship"]
+	path = .config/starship
+	url = https://github.com/edwarmv/starship.git
