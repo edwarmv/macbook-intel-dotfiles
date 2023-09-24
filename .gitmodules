@@ -46,3 +46,6 @@
 [submodule ".config/bat"]
 	path = .config/bat
 	url = https://github.com/edwarmv/bat
+[submodule ".config/delta"]
+	path = .config/delta
+	url = https://github.com/edwarmv/delta
