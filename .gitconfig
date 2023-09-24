@@ -11,7 +11,7 @@ email = edwar_kenedy@hotmail.com
 	path = ~/.config/gitalias/gitalias.txt
 	path = ~/.config/delta/tokyonight_storm.gitconfig
 [core]
-	excludesfile = /Users/edwarmv/.gitignore
+	excludesfile = ~/.gitignore
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
