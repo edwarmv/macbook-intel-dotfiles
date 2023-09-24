@@ -43,3 +43,6 @@
 [submodule ".config/kitty"]
 	path = .config/kitty
 	url = https://github.com/edwarmv/kitty
+[submodule ".config/bat"]
+	path = .config/bat
+	url = https://github.com/edwarmv/bat
