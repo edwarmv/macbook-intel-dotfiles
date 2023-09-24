@@ -37,3 +37,6 @@
 [submodule ".config/lf"]
 	path = .config/lf
 	url = https://github.com/edwarmv/lf
+[submodule ".config/lazydocker"]
+	path = .config/lazydocker
+	url = https://github.com/edwarmv/lazydocker
